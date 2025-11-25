@@ -6,6 +6,7 @@ body:
     attributes:
       value: |
         Please fill out the sections below to help everyone identify and fix the bug
+
   - type: textarea
     id: description
     attributes:
@@ -13,7 +14,8 @@ body:
       placeholder: When I click here this happens
     validations:
       required: true
-    - type: checkboxes
+
+  - type: checkboxes
     id: criticality
     attributes:
       label: Bug Criticality
@@ -23,8 +25,9 @@ body:
         - label: "3 - Disturbing — affects gameplay noticeably, wrong values, UI mixups"
         - label: "2 - Serious — gets you stuck badly or prevents progress"
         - label: "1 - Critical — crashes the game or breaks core functionality"
-      validations:
+    validations:
       required: true
+
   - type: textarea
     id: steps
     attributes:
@@ -35,21 +38,37 @@ body:
         3. Click there
     validations:
       required: true
+
   - type: textarea
     id: expected
     attributes:
       label: What was the expected result?
       placeholder: I expected this to happen
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workaround
+      description: Were you able to bypass or workaround the issue somehow?
+      placeholder: |
+        Example:
+        - Restarting the level helped
+        - Switching items avoided the freeze
+        - Could not find any workaround
+      render: markdown
+
   - type: textarea
     id: screenshots
     attributes:
       label: Put here any screenshots or videos (optional)
+
   - type: dropdown
     id: assign
     attributes:
       label: "Would you like to work on this issue?"
       options:
         - "Yes"
+
   - type: markdown
     attributes:
       value: |
