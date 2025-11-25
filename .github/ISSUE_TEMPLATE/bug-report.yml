@@ -13,6 +13,18 @@ body:
       placeholder: When I click here this happens
     validations:
       required: true
+    - type: checkboxes
+    id: criticality
+    attributes:
+      label: Bug Criticality
+      description: How severe is the bug in your opinion?
+      options:
+        - label: "4 - Mostly fun / cosmetic — does not affect gameplay or mechanics"
+        - label: "3 - Disturbing — affects gameplay noticeably, wrong values, UI mixups"
+        - label: "2 - Serious — gets you stuck badly or prevents progress"
+        - label: "1 - Critical — crashes the game or breaks core functionality"
+      validations:
+      required: true
   - type: textarea
     id: steps
     attributes:
