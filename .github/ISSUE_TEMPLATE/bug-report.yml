@@ -93,7 +93,6 @@ body:
         - Restarting the level helped
         - Switching items avoided the freeze
         - Could not find any workaround
-      render: markdown
 
   - type: textarea
     id: screenshots
