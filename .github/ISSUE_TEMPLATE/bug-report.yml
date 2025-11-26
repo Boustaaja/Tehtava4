@@ -20,6 +20,8 @@ body:
     attributes:
       label: Bug Criticality
       description: How severe is the bug in your opinion?
+      **This is required!** Please select one criticality level.
+      Tip: Please add a corresponding keyword to the "Keywords" field below, e.g., `criticality-1`, `criticality-2`, etc.
       options:
         - label: "4 - Mostly fun / cosmetic — does not affect gameplay or mechanics"
         - label: "3 - Disturbing — affects gameplay noticeably, wrong values, UI mixups"
@@ -67,7 +69,7 @@ body:
     attributes:
       label: Keywords
       description: Add keywords to help others find this bug (use short, descriptive tags)
-      placeholder: inventory, movement, audio, freeze, quest, save-file
+      placeholder: criticality-x, inventory, movement, audio, freeze, quest, save-file
 
   - type: dropdown
     id: assign
