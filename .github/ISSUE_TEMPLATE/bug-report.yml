@@ -32,6 +32,13 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: keywords
+    attributes:
+      label: Keywords
+      description: Add keywords to help others find this bug (use short, descriptive tags)
+      placeholder: criticality-x, inventory, movement, audio, freeze, quest, save-file
+
   - type: textarea
     id: steps
     attributes:
@@ -65,13 +72,6 @@ body:
     id: screenshots
     attributes:
       label: Put here any screenshots or videos (optional)
-
-  - type: input
-    id: keywords
-    attributes:
-      label: Keywords
-      description: Add keywords to help others find this bug (use short, descriptive tags)
-      placeholder: criticality-x, inventory, movement, audio, freeze, quest, save-file
 
   - type: dropdown
     id: assign
