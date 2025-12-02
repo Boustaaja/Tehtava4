@@ -26,22 +26,26 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
-    id: criticality
-    attributes:
-      label: Bug Criticality
-      description: |
-        How severe is the bug in your opinion?
+- type: checkboxes
+  id: criticality
+  attributes:
+    label: Bug Criticality
+    description: |
+      How severe is the bug in your opinion?
 
-        ⚠️ This is required! Please select one criticality level.
-        Tip: Please add a corresponding keyword to the "Keywords" field below, e.g., `criticality-1`, `criticality-2`, etc.
-      options:
-        - label: "4 - Mostly fun / cosmetic — does not affect gameplay or mechanics"
-        - label: "3 - Disturbing — affects gameplay noticeably, wrong values, UI mixups"
-        - label: "2 - Serious — gets you stuck badly or prevents progress"
-        - label: "1 - Critical — crashes the game or breaks core functionality"
-    validations:
-      required: true
+      ⚠️ This is required! Please select one criticality level.
+      Tip: Please add a corresponding keyword to the "Keywords" field below, e.g., `criticality-1`, `criticality-2`, etc.
+    options:
+      - label: "4 - Mostly fun / cosmetic — does not affect gameplay or mechanics"
+        value: "criticality-4"
+      - label: "3 - Disturbing — affects gameplay noticeably, wrong values, UI mixups"
+        value: "criticality-3"
+      - label: "2 - Serious — gets you stuck badly or prevents progress"
+        value: "criticality-2"
+      - label: "1 - Critical — crashes the game or breaks core functionality"
+        value: "criticality-1"
+  validations:
+    required: true
 
   - type: input
     id: keywords
