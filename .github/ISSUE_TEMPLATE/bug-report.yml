@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Please fill out the sections below to help everyone identify and fix the bug
-
+        
   - type: input
     id: version
     attributes:
@@ -17,7 +17,7 @@ body:
       placeholder: v0.3.1, Build 145, main, commit abc123
     validations:
       required: true
-
+      
   - type: textarea
     id: description
     attributes:
@@ -37,13 +37,9 @@ body:
         Tip: Please add a corresponding keyword to the "Keywords" field below, e.g., `criticality-1`, `criticality-2`, etc.
       options:
         - label: "4 - Mostly fun / cosmetic — does not affect gameplay or mechanics"
-          value: "criticality-4"
         - label: "3 - Disturbing — affects gameplay noticeably, wrong values, UI mixups"
-          value: "criticality-3"
         - label: "2 - Serious — gets you stuck badly or prevents progress"
-          value: "criticality-2"
         - label: "1 - Critical — crashes the game or breaks core functionality"
-          value: "criticality-1"
     validations:
       required: true
 
