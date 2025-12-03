@@ -6,6 +6,9 @@ body:
     attributes:
       value: |
         Please fill out the sections below to help everyone identify and fix the bug
+        ⚠️ Important!
+        Remember to select the bug criticality *and add the matching GitHub label* (e.g., Critical, Serious, Disturbing, Mostly Fun).**
+        Without the label, the bug cannot be categorized properly.
         
   - type: input
     id: version
@@ -34,7 +37,7 @@ body:
         How severe is the bug in your opinion?
 
         ⚠️ This is required! Please select one criticality level.
-        Tip: Please add a corresponding keyword to the "Keywords" field below, e.g., `criticality-1`, `criticality-2`, etc.
+        Additionaly: Please remember to add a corresponding label match the criticality level e.g., `Critical`, `Serious`, etc.
       options:
         - label: "4 - Mostly fun / cosmetic — does not affect gameplay or mechanics"
         - label: "3 - Disturbing — affects gameplay noticeably, wrong values, UI mixups"
@@ -48,7 +51,7 @@ body:
     attributes:
       label: Keywords
       description: Add keywords to help others find this bug (use short, descriptive tags)
-      placeholder: criticality-x, inventory, movement, audio, freeze, quest, save-file
+      placeholder: inventory, movement, audio, freeze, quest, save-file
 
   - type: checkboxes
     id: reproducibility
