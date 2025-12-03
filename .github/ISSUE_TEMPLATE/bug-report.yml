@@ -7,7 +7,7 @@ body:
       value: |
         Please fill out the sections below to help everyone identify and fix the bug
         ⚠️ Important!
-        Remember to select the bug criticality *and add the matching GitHub label* (e.g., Critical, Serious, Disturbing, Mostly Fun).**
+        After selecting the bug criticality, make sure to add the corresponding GitHub label **at the bottom of this report** (e.g., Critical, Serious, Disturbing, Mostly Fun).**
         Without the label, the bug cannot be categorized properly.
         
   - type: input
@@ -36,8 +36,8 @@ body:
       description: |
         How severe is the bug in your opinion?
 
-        ⚠️ This is required! Please select one criticality level.
-        Additionaly: Please remember to add a corresponding label match the criticality level e.g., `Critical`, `Serious`, etc.
+        ⚠️ Please select one criticality level.
+        Reminder: Please add a corresponding label match the criticality level e.g., `Critical`, `Serious`, etc.
       options:
         - label: "4 - Mostly fun / cosmetic — does not affect gameplay or mechanics"
         - label: "3 - Disturbing — affects gameplay noticeably, wrong values, UI mixups"
