@@ -35,10 +35,8 @@ body:
       label: Bug Criticality
       description: |
         How severe is the bug in your opinion?
-
-        ⚠️ Please select one criticality level.
-        
-        Reminder: Please add a corresponding label match the criticality level e.g., `Critical`, `Serious`, etc.
+        ⚠️ Select one criticality level.          
+        **Reminder:** Please add a corresponding label match the criticality level e.g., `Critical`, `Serious`, etc.
       options:
         - label: "4 - Mostly fun / cosmetic — does not affect gameplay or mechanics"
         - label: "3 - Disturbing — affects gameplay noticeably, wrong values, UI mixups"
