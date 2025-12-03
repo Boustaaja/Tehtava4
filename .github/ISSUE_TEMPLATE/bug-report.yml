@@ -34,7 +34,7 @@ body:
     attributes:
       label: Bug Criticality
       description: |
-        How severe is the bug in your opinion?
+        How severe is the bug in your opinion?  
         ⚠️ Select one criticality level.          
         **Reminder:** Please add a corresponding label match the criticality level e.g., `Critical`, `Serious`, etc.
       options:
