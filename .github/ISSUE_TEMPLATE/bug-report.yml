@@ -19,7 +19,7 @@ body:
         (For example: build number, game version, editor branch, or commit hash.)
       placeholder: v0.3.1, Build 145, main, commit abc123
     validations:
-      required: true
+      required: false
       
   - type: textarea
     id: description
